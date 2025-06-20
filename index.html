@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="fevicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+</head>
+<body>
+    <!-- Container -->
+    <div class="container">
+        
+        <!-- Heading -->
+        <p class="heading">Currency Converter</p>
+
+        <!-- Amount -->
+        <input class="amount" type="number" placeholder="Enter amount">
+
+        <!-- Selector -->
+        <div class="currency">
+            <button class="cur1 cur">
+                <img src="/flag/INR.jpeg" class="cur1-img cur-img">
+                <select class="cur1-detail cur-detail">
+                    <option value="USD">USD</option>
+                    <option value="EUR">EUR</option>
+                    <option value="JPY">JPY</option>
+                    <option value="RUB">RUB</option>
+                    <option value="CHF">CHF</option>
+                    <option value="CAD">CAD</option>
+                    <option value="AUD">AUD</option>
+                    <option value="CNY">CNY</option>
+                    <option value="INR" selected>INR</option>
+                    <option value="SGD">SGD</option>
+                </select>
+            </button>
+            <button class="cur2 cur">
+                <img src="/flag/USD.jpeg" class="cur2-img cur-img">
+                <select class="cur2-detail cur-detail">
+                    <option value="USD" selected>USD</option>
+                    <option value="EUR">EUR</option>
+                    <option value="JPY">JPY</option>
+                    <option value="RUB">RUB</option>
+                    <option value="CHF">CHF</option>
+                    <option value="CAD">CAD</option>
+                    <option value="AUD">AUD</option>
+                    <option value="CNY">CNY</option>
+                    <option value="INR">INR</option>
+                    <option value="SGD">SGD</option>
+                </select>
+            </button>
+        </div>
+
+        <!-- Reverse -->
+        <button class="reverse"><i class="fa-solid fa-arrow-right-arrow-left"></i></button>
+
+        <!-- Convert Currency -->
+        <button class="convert">Convert</button>
+
+        <!-- Result -->
+        <p class="result"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
